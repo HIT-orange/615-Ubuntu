@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="urdfonly">
+  <link
+    name="base_link">
+  </link>
+
+  <joint
+    name="joint_1"
+    type="continuous">
+    <origin
+      xyz="0 0 0.17"
+      rpy="3.14159265358979 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="7"
+      velocity="0.52" />
+  </joint>
+
+  <link
+    name="link_1">
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.05" length="0.34" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.86667 0.86667 0.8902 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.05" length="0.34" />
+      </geometry>
+    </collision>
+  </link>
+
+
+
+  <joint
+    name="joint_2"
+    type="revolute">
+    <origin
+      xyz="0 0 -0.1188"
+      rpy="-1.5707963267949 0 0" />
+    <parent
+      link="link_1" />
+    <child
+      link="link_2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="6.2832"
+      effort="14"
+      velocity="0.52" />
+  </joint>
+
+  <link
+    name="link_2">
+
+    <visual>
+      <origin
+        xyz="0 -0.205 0"
+        rpy="1.57079 0 0" />
+      <geometry>
+        <cylinder radius="0.05" length="0.50" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 -0.205 0"
+        rpy="1.57079 0 0" />
+      <geometry>
+        <cylinder radius="0.05" length="0.50" />
+      </geometry>
+    </collision>
+  </link>
+
+
+
+  <joint
+    name="joint_3"
+    type="revolute">
+    <origin
+      xyz="0 -0.41 0"
+      rpy="3.14159265358979 0 0" />
+    <parent
+      link="link_2" />
+    <child
+      link="link_3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="6.2832"
+      effort="5"
+      velocity="0.52" />
+  </joint>
+
+  <link
+    name="link_3">
+    
+    <visual>
+      <origin
+        xyz="0 -0.10 0"
+        rpy="1.5707963267949 0 0" />
+      <geometry>
+        <cylinder radius="0.05" length="0.28" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 -0.10 0"
+        rpy="1.5707963267949 0 0" />
+      <geometry>
+        <cylinder radius="0.05" length="0.28" />
+      </geometry>
+    </collision>
+  </link>
+
+
+
+  <joint
+    name="joint_4"
+    type="continuous">
+    <origin
+      xyz="0 0 -0.0098"
+      rpy="-1.5707963267949 0 0" />
+    <parent
+      link="link_3" />
+    <child
+      link="link_4" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="5"
+      velocity="0.52" />
+  </joint>
+
+  <link
+    name="link_4">
+    
+    <visual>
+      <origin
+        xyz="0 0 -0.25"
+        rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.06" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 -0.25"
+        rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.06" />
+      </geometry>
+    </collision>
+  </link>
+
+
+
+  <joint
+    name="joint_5"
+    type="continuous">
+    <origin
+      xyz="0 0 -0.25001"
+      rpy="-1.0472 0 0" />
+    <parent
+      link="link_4" />
+    <child
+      link="link_5" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="2"
+      velocity="0.52" />
+  </joint>
+
+  <link
+    name="link_5">
+    
+    <visual>
+      <origin
+        xyz="0 0 -0.0856"
+        rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.06" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 -0.0856"
+        rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.06" />
+      </geometry>
+    </collision>
+  </link>
+
+
+
+  <joint
+    name="joint_6"
+    type="continuous">
+    <origin
+      xyz="0 0 -0.085514"
+      rpy="1.0472 0 0" />
+    <parent
+      link="link_5" />
+    <child
+      link="link_6" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="2"
+      velocity="0.52" />
+  </joint>
+
+  <link
+    name="link_6">
+   
+    <visual>
+      <origin
+        xyz="0 0 -0.10"
+        rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.07" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.1098 0.1098 0.1098 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 -0.10"
+        rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.07" />
+      </geometry>
+    </collision>
+  </link>
+
+
+
+
+
+  <joint
+    name="joint_7"
+    type="fixed">
+    <origin
+      xyz="0 0 -0.2"
+      rpy="3.14159265358979 0 1.5707963267949" />
+    <parent
+      link="link_6" />
+    <child
+      link="link_7" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+
+  <link
+    name="link_7">
+  </link>
+
+
+</robot>
